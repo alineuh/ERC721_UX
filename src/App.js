@@ -32,8 +32,10 @@ import ChainInfo from './chain-info';
 import Error from './error';
 import FakeBayc from './FakeBayc';
 import FakeBaycToken from './FakeBaycToken';
+import FakeBaycDetails from './FakeBaycDetails';
 //import ErrorPage from './ErrorPage'; 
 //import FakeBayc from './FakeBayc'; // Import de la nouvelle page
+
 
 function App() {
   return (
@@ -58,7 +60,8 @@ function App() {
           <Route path="/chain-info" element={<ChainInfo />} />
           <Route path="/error" element={<Error />} />
           <Route path="/FakeBayc" element={<FakeBayc />} />
-          <Route path="/fakeBayc/:tokenId" element={<FakeBaycToken />} />
+
+          <Route path="/fakeBayc/:tokenId" element={<FakeBaycDetails />} />
         </Routes>
       </header>
     </div>
