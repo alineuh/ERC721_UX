@@ -32,7 +32,7 @@ import ChainInfo from './chain-info';
 import Error from './error';
 import FakeBayc from './FakeBayc';
 import FakeBaycToken from './FakeBaycToken';
-import FakeBaycDetails from './FakeBaycDetails';
+import FakeNefturians from './FakeNefturians';
 //import ErrorPage from './ErrorPage'; 
 //import FakeBayc from './FakeBayc'; // Import de la nouvelle page
 
@@ -52,6 +52,9 @@ function App() {
             <li>
               <Link to="/FakeBayc">User Info</Link>
             </li>
+            <li>
+              <Link to="/fakeNefturians">Fake Nefturians</Link>
+            </li>
           </ul>
         </nav>
 
@@ -61,7 +64,7 @@ function App() {
           <Route path="/error" element={<Error />} />
           <Route path="/FakeBayc" element={<FakeBayc />} />
           <Route path="/fakeBayc/:tokenId" element={<FakeBaycToken />} />
-          {/* <Route path="/fakeBayc/:tokenId" element={<FakeBaycDetails />} /> */}
+          <Route path="/fakeNefturians" element={<FakeNefturians />} /> 
         </Routes>
       </header>
     </div>
