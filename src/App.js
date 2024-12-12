@@ -60,8 +60,8 @@ function App() {
           <Route path="/chain-info" element={<ChainInfo />} />
           <Route path="/error" element={<Error />} />
           <Route path="/FakeBayc" element={<FakeBayc />} />
-
-          <Route path="/fakeBayc/:tokenId" element={<FakeBaycDetails />} />
+          <Route path="/fakeBayc/:tokenId" element={<FakeBaycToken />} />
+          {/* <Route path="/fakeBayc/:tokenId" element={<FakeBaycDetails />} /> */}
         </Routes>
       </header>
     </div>
